@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Trash Flipper: Tinder Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Trash Flipper: Tinder Edition</h1>
+    <p>Írj be egy számot 1-5 között, hogy feloldhasd az ajándékaid:</p>
+    <input type="number" id="numberInput" min="1" max="5" onkeydown="if (event.key === 'Enter') flipCard()">
+    <div id="cardContainer">
+        <div class="card" id="card1">
+            <img src="images/cig.jpg" class="front">
+            <video src="videos/Messenger_creation_0b30cad5-4984-495f-8193-caf9ff195a32.mp4" class="video" controls></video>
+            <div class="back">1</div>
+        </div>
+        <div class="card" id="card2">
+            <img src="images/vitya.jpeg" class="front">
+            <video src="videos/Messenger_creation_fb39cf36-daf6-4b49-bc02-17b7e67611d6.mp4" class="video" controls></video>
+            <div class="back">2</div>
+        </div>
+        <div class="card" id="card3">
+            <img src="images/fidesz.jpg" class="front">
+            <video src="videos/Messenger_creation_5dfe8bb7-5556-4dfa-a81d-e01627d1dd50.mp4" class="video" controls></video>
+            <div class="back">3</div>
+        </div>
+        <div class="card" id="card4">
+            <img src="images/laza.jpg" class="front">
+            <video src="videos/puzser.mp4" class="video" controls></video>
+            <div class="back">4</div>
+        </div>
+        <div class="card" id="card5">
+            <img src="images/lose.jpg" class="front">
+            <video src="videos/kecses.mp4" class="video" controls></video>
+            <div class="back">5</div>
+        </div>
+    </div>
+    <button onclick="startVideoMode()">További meglepetésekért kérlek kattinst ide
+
+<script
+		src="script.js">
+</script>
+
+</body>
+</html>

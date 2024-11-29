@@ -1,0 +1,87 @@
+@font-face {
+            font-family: 'Yoruka';
+            src: url('font/Yoruka.otf') format('opentype');
+        }
+
+        body {
+            background-image: url('background/51jsQRl7e9L._AC_.jpg'); /* Háttérkép elérési útja */
+            background-size: cover; /* A teljes kép megjelenítése az arányok megtartásával */
+            background-repeat: no-repeat; /* Ismétlés kikapcsolása */
+            background-position: center; /* Kép középre helyezése */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* Kezdetre igazítás */
+            height: 100vh;
+            margin: 0;
+            padding-top: 80px; /* Elem eltolása lefelé */
+            font-family: 'Yoruka', 'Comic Sans MS', cursive, sans-serif; /* Egyedi betűtípus */
+            color: #FF69B4; /* Rózsaszín betűszín */
+            background-color: black;
+        }
+        #cardContainer {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            width: 90%;
+        }
+        .card {
+            border: 2px solid #4a4a4a; /* Szürke szegély */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent; /* Fekete háttér */
+            position: relative;
+            height: 300px; /* Fix magasság */
+        }
+        .card img, .card video {
+            max-width: 100%;
+            max-height: 100%;
+            display: none;
+        }
+        .card .back {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px; /* Nagyobb betűméret */
+            color: #FF69B4; /* Rózsaszín betűszín */
+            background: transparent; /* Fekete háttér */
+        }
+        h1 {
+            font-size: 50px; /* Nagyobb betűméret a címhez */
+        }
+        p {
+            font-size: 35px; /* Nagyobb betűméret a bekezdéshez */
+        }
+        input {
+            font-size: 25px; /* Nagyobb betűméret */
+            margin-top: 10px;
+            font-family: 'Yoruka', 'Comic Sans MS', cursive, sans-serif; /* Egyedi betűtípus */
+            padding: 10px;
+            border-radius: 5px;
+            border: 2px solid #4a4a4a; /* Szürke szegély */
+            background-color: transparent; /* Átlátszó háttér */
+            color: #FF69B4; /* Rózsaszín betűszín */
+            text-align: right; /* Számok jobbra igazítása */
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+        button {
+            font-size: 35px; /* Nagyobb betűméret a gombhoz */
+            font-weight: bold; /* Vastagabb betűk */
+            margin-top: 10px;
+            font-family: 'Yoruka', 'Comic Sans MS', cursive, sans-serif; /* Egyedi betűtípus */
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 2px solid #4a4a4a; /* Szürke szegély */
+            background-color: transparent; /* Átlátszó háttér */
+            color: #FF69B4; /* Rózsaszín betűszín */
+        }
